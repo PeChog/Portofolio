@@ -21,6 +21,9 @@
       font-family: "outward-block";
       font-size: 250px;
     }
+    h1:hover {
+      font-family: "outward-borders";
+    }
   }
   .presentation {
     display: inline-block;
@@ -59,6 +62,7 @@
       writing-mode: vertical-rl;
       text-orientation: mixed;
       margin: 20px 10px;
+      font-size: 20px;
     }
 
     span:hover {
