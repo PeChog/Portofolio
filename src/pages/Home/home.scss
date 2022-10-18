@@ -1,16 +1,58 @@
 .Home {
   min-height: 100vh;
   background-color: #eee7e1;
+  .menu {
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 80px;
+    // border: red solid 1px;
+    h1 {
+      font-family: "outward-block";
+      font-size: 250px;
+    }
+  }
+  .presentation {
+    display: inline-block;
+    position: absolute;
+
+    // border: solid yellow 2px;
+    width: 40vw;
+    margin-left: 15vw;
+    margin-top: 37vh;
+    p {
+      font-size: 20px;
+      margin: 10px;
+      font-family: "Karric-Italic";
+    }
+    h1 {
+      font-size: 80px;
+      letter-spacing: 4px;
+    }
+    h2 {
+      margin: 5px;
+      margin-top: 50px;
+
+      font-size: 25px;
+    }
+  }
   .social {
     display: flex;
+    // border: green solid 1px;
+    margin-top: 68vh;
+
     flex-direction: column;
-    margin-top: 10px;
-    border: solid red 1px;
+    position: relative;
+
     float: right;
     span {
       writing-mode: vertical-rl;
       text-orientation: mixed;
-      margin: 10px 10px;
+      margin: 20px 10px;
+      cursor: default;
+    }
+
+    span:hover {
+      text-decoration: line-through;
     }
   }
 }
