@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Karric-Regular";
+  src: url("./assets/fonts/karrik_fonts-main/fonts/Web/TFF/Karrik-Regular.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Karric-Italic";
+  src: url("./assets/fonts/karrik_fonts-main/fonts/Web/TFF/Karrik-Italic.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "outward-block";
+  src: url("./assets/fonts/outward-master/fonts/ttf/outward-block.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "outward-borders";
+  src: url("./assets/fonts/outward-master/fonts/ttf/outward-borders.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "outward-round";
+  src: url("./assets/fonts/outward-master/fonts/ttf/outward-round.ttf")
+    format("truetype");
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}

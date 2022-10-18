@@ -1,0 +1,16 @@
+.Home {
+  min-height: 100vh;
+  background-color: #eee7e1;
+  .social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border: solid red 1px;
+    float: right;
+    span {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      margin: 10px 10px;
+    }
+  }
+}
