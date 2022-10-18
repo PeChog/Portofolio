@@ -25,11 +25,33 @@
   src: url("./assets/fonts/outward-master/fonts/ttf/outward-round.ttf")
     format("truetype");
 }
+@font-face {
+  font-family: "Millimetre-Bold";
+  src: url("./assets/fonts/Millimetre-master/fonts/Millimetre-Bold.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Millimetre-Extrablack";
+  src: url("./assets/fonts/Millimetre-master/fonts/Millimetre-Extrablack.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Millimetre-Light";
+  src: url("./assets/fonts/Millimetre-master/fonts/Millimetre-Light.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Millimetre-Regular";
+  src: url("./assets/fonts/Millimetre-master/fonts/Millimetre-Regular.otf")
+    format("opentype");
+}
 
 body {
   margin: 0;
   height: 100vh;
   width: 100vw;
   font-family: "Karric-Regular";
-  cursor: none;
+  // cursor: none;
 }

@@ -13,15 +13,18 @@
     position: absolute;
   }
   .menu {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
     margin-top: 40px;
     margin-left: 80px;
     // border: red solid 1px;
-    h1 {
+    .home-link {
+      text-decoration: none;
+      color: black;
       font-family: "outward-block";
       font-size: 250px;
     }
-    h1:hover {
+    .home-link:hover {
       font-family: "outward-borders";
     }
   }
@@ -39,33 +42,46 @@
       font-family: "Karric-Italic";
     }
     h1 {
-      font-size: 80px;
+      //   font-family: "Millimetre-Light";
+      font-size: 60px;
       letter-spacing: 4px;
     }
     h2 {
       margin: 5px;
       margin-top: 50px;
 
-      font-size: 25px;
+      font-size: 22.5px;
     }
   }
   .social {
     display: flex;
     // border: green solid 1px;
-    margin-top: 68vh;
+    margin-top: 55.2vh;
+    width: 60px;
 
     flex-direction: column;
+    align-items: center;
     position: relative;
 
     float: right;
-    span {
+    img {
+      margin-bottom: 50px;
+      //   border: solid red 1px;
+      transform: rotate(+0.25turn);
+      width: 150px;
+      height: 80px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
       writing-mode: vertical-rl;
       text-orientation: mixed;
       margin: 20px 10px;
       font-size: 20px;
     }
 
-    span:hover {
+    a:hover {
       text-decoration: line-through;
     }
   }

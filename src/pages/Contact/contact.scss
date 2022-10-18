@@ -1,0 +1,62 @@
+.contact {
+  min-height: 100vh;
+  color: #eee7e1;
+  background-color: #262423;
+
+  .container {
+    width: 65vw;
+    margin: 0 auto;
+  }
+  .app-cursor {
+    z-index: 1000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    pointer-events: none;
+    overflow: hidden;
+    position: absolute;
+  }
+  .meet-container {
+    display: inline-block;
+    margin-top: 150px;
+  }
+  .meet {
+    max-height: 200px;
+    margin-left: 237px;
+
+    font-size: 200px;
+    // border: red solid 1px;
+    box-sizing: border-box;
+    content-visibility: auto;
+    text-overflow: clip;
+    font-family: "Millimetre-Light";
+  }
+  .mail {
+    font-size: 18px;
+    margin-top: 40px;
+
+    display: flex;
+
+    a {
+      color: #eee7e1;
+      margin-left: 10px;
+      //   border: solid red 1px;
+      margin-bottom: 2px;
+      padding-bottom: 3px;
+    }
+  }
+  .infos {
+    display: flex;
+    margin-top: 20px;
+
+    a {
+      text-decoration: none;
+      margin: 10px;
+      color: #eee7e1;
+    }
+    a:hover {
+      text-decoration: line-through;
+    }
+  }
+}

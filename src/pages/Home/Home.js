@@ -1,5 +1,7 @@
 import { useRef } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import arrow from "../../assets/images/arrow.png";
 import "./home.scss";
 
 const Home = () => {
@@ -24,15 +26,28 @@ const Home = () => {
       >
         <div className="app-cursor" ref={cursorRef}></div>
         <div className="menu">
-          <h1>CONTACT</h1>
-          <h1>ABOUT</h1>
-          <h1>WORK</h1>
+          <Link className="home-link" to={"/contact"} state={{ mousePos }}>
+            CONTACT
+          </Link>
+          <Link className="home-link" to={"/about"}>
+            ABOUT
+          </Link>
+          <Link className="home-link" to={"/work"}>
+            WORK
+          </Link>
         </div>
         <div className="social">
-          <span></span>
-          <span>IG</span>
-          <span>IN</span>
-          <span>GH</span>
+          <div>
+            <img alt="arrow" src={arrow} />
+          </div>
+
+          <a href="https://www.instagram.com/quasardjkatarina_officiel/?hl=fr">
+            IG
+          </a>
+          <a href="https://www.linkedin.com/in/pierre-etienne-chognard-39491722b/">
+            IN
+          </a>
+          <a href="https://github.com/PeChog">GH</a>
         </div>
         <div className="presentation">
           <h1>Pierre-Etienne Chognard</h1>
