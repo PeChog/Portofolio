@@ -1,6 +1,17 @@
 .Home {
   min-height: 100vh;
   background-color: #eee7e1;
+  cursor: none;
+  .app-cursor {
+    z-index: 1000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    pointer-events: none;
+    overflow: hidden;
+    position: absolute;
+  }
   .menu {
     display: inline-block;
     margin-top: 40px;
@@ -48,7 +59,6 @@
       writing-mode: vertical-rl;
       text-orientation: mixed;
       margin: 20px 10px;
-      cursor: default;
     }
 
     span:hover {
