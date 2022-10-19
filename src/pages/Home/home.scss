@@ -2,6 +2,10 @@
   min-height: 100vh;
   background-color: #eee7e1;
   cursor: none;
+  .container {
+    width: 70vw;
+    margin: 0 auto;
+  }
   .app-cursor {
     z-index: 1000;
     border-radius: 50%;
@@ -23,6 +27,7 @@
       color: black;
       font-family: "outward-block";
       font-size: 250px;
+      cursor: none;
     }
     .home-link:hover {
       font-family: "outward-borders";
@@ -46,6 +51,22 @@
       font-size: 60px;
       letter-spacing: 4px;
     }
+    h2:after {
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: bottom;
+
+      animation: ellipsis steps(4, end) 1500ms infinite;
+      content: "\2026";
+      /* ascii code for the ellipsis character */
+      width: 0px;
+    }
+    @keyframes ellipsis {
+      to {
+        width: 50px;
+      }
+    }
+
     h2 {
       margin: 5px;
       margin-top: 50px;
@@ -79,6 +100,7 @@
       text-orientation: mixed;
       margin: 20px 10px;
       font-size: 20px;
+      cursor: none;
     }
 
     a:hover {

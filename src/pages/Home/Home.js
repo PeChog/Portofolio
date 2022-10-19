@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <>
       <motion.div
-        className="Home"
+        className="Home container"
         onMouseMove={mousePos}
         initial={{ opacity: 0 }}
         animate={{
@@ -25,7 +25,7 @@ const Home = () => {
         exit={{ opacity: 0 }}
       >
         <div className="app-cursor" ref={cursorRef}></div>
-        <div className="menu">
+        <div className="menu ">
           <Link className="home-link" to={"/contact"} state={{ mousePos }}>
             CONTACT
           </Link>
@@ -36,7 +36,7 @@ const Home = () => {
             WORK
           </Link>
         </div>
-        <div className="social">
+        <div className="social container">
           <div>
             <img alt="arrow" src={arrow} />
           </div>
