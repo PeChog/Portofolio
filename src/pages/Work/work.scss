@@ -1,0 +1,13 @@
+.Work {
+  min-height: 100vh;
+  color: #262423;
+  background-color: #eee7e1;
+
+  cursor: none;
+  .container {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 50px;
+  }
+}
