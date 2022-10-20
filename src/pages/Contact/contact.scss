@@ -63,3 +63,62 @@
     }
   }
 }
+
+@media (max-width: 415px) {
+  .contact {
+    min-height: 100vh;
+    color: #eee7e1;
+    background-color: #262423;
+    cursor: none;
+
+    .container {
+      width: 90vw;
+      margin: 0 auto;
+    }
+    .app-cursor {
+      display: none;
+    }
+    .meet-container {
+      display: inline-block;
+      margin-top: 150px;
+    }
+    .meet {
+      max-height: 200px;
+      margin-left: 13px;
+
+      font-size: 80px;
+
+      // border: red solid 1px;
+      box-sizing: border-box;
+      content-visibility: auto;
+      text-overflow: clip;
+      font-family: "Millimetre-Light";
+    }
+    .mail {
+      font-size: 18px;
+      margin-top: 40px;
+
+      display: flex;
+
+      a {
+        color: #eee7e1;
+        margin-left: 10px;
+        //   border: solid red 1px;
+        margin-bottom: 2px;
+        padding-bottom: 3px;
+        cursor: none;
+      }
+    }
+    .infos {
+      display: flex;
+      margin-top: 20px;
+
+      a {
+        text-decoration: none;
+        margin: 10px;
+        color: #eee7e1;
+        cursor: none;
+      }
+    }
+  }
+}

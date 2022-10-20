@@ -71,20 +71,22 @@ const About = () => {
                 <img alt="Figma" src={Figma} style={{ width: "50px" }} />
               </div>
             </div>
-            <h2 style={{ marginTop: "40px" }}>Curriculum vitæ</h2>
           </h2>
-          <motion.a
-            href="https://www.dropbox.com/s/fj41ym7d51g07d5/CV_dev_front-end_Chognard_PE.pdf?dl=0"
-            className="CV"
-            whileHover={{
-              scale: 1.2,
-              transformOrigin: "left center",
-              textShadow: "0px 0px 8px rgb(255, 255, 255",
-              backgroundColor: "none",
-            }}
-          >
-            CV
-          </motion.a>
+          <div className="curri">
+            <h2 style={{ marginTop: "40px" }}>Curriculum vitæ</h2>
+            <motion.a
+              href="https://www.dropbox.com/s/fj41ym7d51g07d5/CV_dev_front-end_Chognard_PE.pdf?dl=0"
+              className="CV"
+              whileHover={{
+                scale: 1.2,
+                transformOrigin: "left center",
+                textShadow: "0px 0px 8px rgb(255, 255, 255",
+                backgroundColor: "none",
+              }}
+            >
+              CV
+            </motion.a>
+          </div>
         </div>
         <div className="right-section">
           <motion.img alt="PP" src={ProfilPicture} />

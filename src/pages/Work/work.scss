@@ -61,3 +61,119 @@
     }
   }
 }
+
+@media (max-width: 415px) {
+  .work {
+    min-height: 100vh;
+    min-width: 100vw;
+    color: #eee7e1;
+    background-color: #262423;
+    cursor: none;
+
+    .app-cursor {
+      display: none;
+    }
+
+    .container {
+      width: 90vw;
+      // height: 80vh;
+      margin: 0 auto;
+      display: flex;
+
+      .work-menu {
+        width: 30vw;
+        padding-top: 48px;
+        // border: solid red 1px;
+        .link {
+          text-decoration: none;
+          color: #eee7e1;
+          cursor: none;
+        }
+        h1 {
+          font-family: "outward-block";
+
+          font-size: 100px;
+          display: green 2px solid;
+        }
+      }
+    }
+    .right-section {
+      // border: solid white 1px;
+      width: 90vw;
+      margin-left: 0vw;
+      margin-top: 50vh;
+      .work-infos {
+        h2 {
+          font-family: "Millimetre-Regular";
+          font-size: 30px;
+          text-decoration: underline;
+          letter-spacing: 2px;
+        }
+        p {
+          margin-top: 3vh;
+          font-family: "Millimetre-Light";
+          font-size: 20px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .work {
+    min-height: 100vh;
+    min-width: 100vw;
+    color: #eee7e1;
+    background-color: #262423;
+    cursor: none;
+
+    .app-cursor {
+      display: none;
+    }
+
+    .container {
+      width: 90vw;
+      // height: 80vh;
+      margin: 0 auto;
+      display: flex;
+
+      .work-menu {
+        width: 30vw;
+        padding-top: 48px;
+        // border: solid red 1px;
+        .link {
+          text-decoration: none;
+          color: #eee7e1;
+          cursor: none;
+        }
+        h1 {
+          font-family: "outward-block";
+
+          font-size: 100px;
+          display: green 2px solid;
+        }
+      }
+    }
+    .right-section {
+      // border: solid white 1px;
+      width: 90vw;
+      margin-left: 0vw;
+      margin-top: 60vh;
+      .work-infos {
+        h2 {
+          font-family: "Millimetre-Regular";
+          font-size: 30px;
+          text-decoration: underline;
+          letter-spacing: 2px;
+        }
+        p {
+          margin-top: 3vh;
+          font-family: "Millimetre-Light";
+          font-size: 20px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
