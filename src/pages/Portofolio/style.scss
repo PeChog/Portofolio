@@ -3,12 +3,23 @@
   min-width: 100vw;
   color: #262423;
   background-color: #eee7e1;
+  cursor: none;
   .app-cursor {
     z-index: 1000;
     border-radius: 50%;
     width: 30px;
     height: 30px;
     border: 1px solid #eee7e1;
+    pointer-events: none;
+    overflow: hidden;
+    position: absolute;
+  }
+  .app-cursor-left {
+    z-index: 1000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #262423;
     pointer-events: none;
     overflow: hidden;
     position: absolute;

@@ -1,5 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import { useState } from "react";
 
 import Home from "../pages/Home/Home";
 import Contact from "../pages/Contact/Contact";
@@ -10,18 +11,63 @@ import Deliveroo from "../pages/Deliveroo/Deliveroo";
 import Eliott from "../pages/Eliott/Eliott";
 
 const AnimatedRoutes = () => {
+  const [isHovered, setIshovered] = useState(false);
+
+  const onMouseEnter = () => {
+    setIshovered(true);
+  };
+
+  const onMouseLeave = () => {
+    setIshovered(false);
+  };
   const location = useLocation();
   return (
     <>
       <AnimatePresence>
         <Routes location={location}>
-          <Route path="/" element={<Home />}></Route>
+          <Route
+            path="/"
+            element={
+              <Home
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
+                isHovered={isHovered}
+              />
+            }
+          ></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/work" element={<Work />}></Route>
-          <Route path="/portofolio" element={<Portofolio />}></Route>
-          <Route path="/deliveroo" element={<Deliveroo />}></Route>
-          <Route path="/eliott" element={<Eliott />}></Route>
+          <Route
+            path="/portofolio"
+            element={
+              <Portofolio
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
+                isHovered={isHovered}
+              />
+            }
+          ></Route>
+          <Route
+            path="/deliveroo"
+            element={
+              <Deliveroo
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
+                isHovered={isHovered}
+              />
+            }
+          ></Route>
+          <Route
+            path="/eliott"
+            element={
+              <Eliott
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
+                isHovered={isHovered}
+              />
+            }
+          ></Route>
         </Routes>
       </AnimatePresence>
       {/* <AnimatePresence>

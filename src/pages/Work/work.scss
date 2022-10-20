@@ -20,6 +20,7 @@
     width: 90vw;
     // height: 80vh;
     margin: 0 auto;
+    display: flex;
 
     .work-menu {
       width: 30vw;
@@ -35,6 +36,27 @@
 
         font-size: 250px;
         display: green 2px solid;
+      }
+    }
+  }
+  .right-section {
+    position: fixed;
+    margin-left: 50vw;
+    // border: solid white 1px;
+    width: 30vw;
+    margin-top: 60vh;
+    .work-infos {
+      h2 {
+        font-family: "Millimetre-Regular";
+        font-size: 30px;
+        text-decoration: underline;
+        letter-spacing: 2px;
+      }
+      p {
+        margin-top: 3vh;
+        font-family: "Millimetre-Light";
+        font-size: 20px;
+        letter-spacing: 1px;
       }
     }
   }

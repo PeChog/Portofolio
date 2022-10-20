@@ -5,7 +5,7 @@ import deliveroo from "../../assets/images/deliveroo.png";
 
 import "./style.scss";
 
-const Deliveroo = () => {
+const Deliveroo = ({ onMouseEnter, onMouseLeave, isHovered }) => {
   let cursorRef = useRef();
   const mousePos = (event) => {
     cursorRef.current.setAttribute(
@@ -24,7 +24,10 @@ const Deliveroo = () => {
       exit={{ opacity: 0 }}
       className="porto-page"
     >
-      <div className="app-cursor" ref={cursorRef}></div>
+      <div
+        className={isHovered ? "app-cursor-left" : "app-cursor"}
+        ref={cursorRef}
+      ></div>
       <div className="container">
         <section className="left-section">
           <motion.div
@@ -64,6 +67,8 @@ const Deliveroo = () => {
             transition: { duration: 2.5 },
           }}
           exit={{ opacity: 0 }}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
         >
           <div>
             <h1>

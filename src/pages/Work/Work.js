@@ -54,6 +54,16 @@ const Work = () => {
             </motion.h1>
           </Link>
         </div>
+        <div className="right-section">
+          <div className="work-infos">
+            <h2>Works.</h2>
+            <p>
+              Selected works. School, personal and free-lance. It shows you some
+              of my skills with react and plugins. Feel free to ask if you have
+              some questions.
+            </p>
+          </div>
+        </div>
       </div>
       <div></div>
     </motion.div>

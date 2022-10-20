@@ -4,7 +4,7 @@ import eliott from "../../assets/images/eliott.png";
 
 import "./style.scss";
 
-const Eliott = () => {
+const Eliott = ({ onMouseEnter, onMouseLeave, isHovered }) => {
   let cursorRef = useRef();
   const mousePos = (event) => {
     cursorRef.current.setAttribute(
@@ -23,7 +23,10 @@ const Eliott = () => {
       exit={{ opacity: 0 }}
       className="porto-page"
     >
-      <div className="app-cursor" ref={cursorRef}></div>
+      <div
+        className={isHovered ? "app-cursor-left" : "app-cursor"}
+        ref={cursorRef}
+      ></div>
       <div className="container">
         <section className="left-section">
           <motion.div
@@ -63,6 +66,8 @@ const Eliott = () => {
             transition: { duration: 2.5 },
           }}
           exit={{ opacity: 0 }}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
         >
           <div>
             <h1>

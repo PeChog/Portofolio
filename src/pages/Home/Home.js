@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import arrow from "../../assets/images/arrow.png";
 import "./home.scss";
 
-const Home = () => {
+const Home = ({ onMouseEnter, onMouseLeave, isHovered }) => {
   let cursorRef = useRef();
   const mousePos = (event) => {
     cursorRef.current.setAttribute(
@@ -24,7 +24,10 @@ const Home = () => {
         }}
         exit={{ opacity: 0 }}
       >
-        <div className="app-cursor" ref={cursorRef}></div>
+        <div
+          className={isHovered ? "app-cursor-hover" : "app-cursor"}
+          ref={cursorRef}
+        ></div>
         <div className="menu ">
           <Link className="home-link" to={"/contact"} state={{ mousePos }}>
             CONTACT
@@ -50,7 +53,9 @@ const Home = () => {
           <a href="https://github.com/PeChog">GH</a>
         </div>
         <div className="presentation">
-          <h1>Pierre-Etienne Chognard</h1>
+          <h1 onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+            Pierre-Etienne Chognard
+          </h1>
           <p>I love make creative design for websites</p>
           <h2>Currently looking for a front-end developer position</h2>
         </div>

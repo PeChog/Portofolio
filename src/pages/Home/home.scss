@@ -16,6 +16,18 @@
     overflow: hidden;
     position: absolute;
   }
+
+  .app-cursor-hover {
+    z-index: 1000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    pointer-events: none;
+    background-color: #eee7e1;
+    overflow: hidden;
+    position: absolute;
+  }
   .menu {
     display: inline-flex;
     flex-direction: column;
