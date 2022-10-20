@@ -1,0 +1,71 @@
+.porto-page {
+  min-height: 100vh;
+  min-width: 100vw;
+  color: #262423;
+  background-color: #eee7e1;
+  .app-cursor {
+    z-index: 1000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #eee7e1;
+    pointer-events: none;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  .container {
+    width: 90vw;
+    margin: 0 auto;
+    border-right: #262423 solid 1.5px;
+    display: flex;
+
+    .title-cont {
+      height: 100vh;
+
+      background-color: #262423;
+      color: #eee7e1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      h1 {
+        margin-bottom: 50px;
+        font-family: "outward-block";
+        font-size: 250px;
+        padding-top: 48px;
+      }
+      img {
+        width: 500px;
+        margin-left: 70px;
+      }
+    }
+    .right-section {
+      //   border: green solid 5px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      h1 {
+        font-family: "Millimetre-Light";
+        font-size: 25px;
+        letter-spacing: 1px;
+        padding-top: 110px;
+        padding-left: 35px;
+        width: 90%;
+      }
+      .list {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 63px;
+
+        font-family: "Millimetre-Regular";
+        font-size: 25px;
+        gap: 45px;
+        h2 {
+          text-decoration: underline;
+        }
+        // border: yellow solid 2px;
+      }
+    }
+  }
+}

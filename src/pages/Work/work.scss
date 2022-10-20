@@ -1,13 +1,41 @@
-.Work {
+.work {
   min-height: 100vh;
-  color: #262423;
-  background-color: #eee7e1;
-
+  min-width: 100vw;
+  color: #eee7e1;
+  background-color: #262423;
   cursor: none;
+
+  .app-cursor {
+    z-index: 1000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #eee7e1;
+    pointer-events: none;
+    overflow: hidden;
+    position: absolute;
+  }
+
   .container {
-    width: 80vw;
+    width: 90vw;
+    // height: 80vh;
     margin: 0 auto;
-    display: flex;
-    padding-top: 50px;
+
+    .work-menu {
+      width: 30vw;
+      padding-top: 48px;
+      // border: solid red 1px;
+      .link {
+        text-decoration: none;
+        color: #eee7e1;
+        cursor: none;
+      }
+      h1 {
+        font-family: "outward-block";
+
+        font-size: 250px;
+        display: green 2px solid;
+      }
+    }
   }
 }

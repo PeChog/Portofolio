@@ -50,6 +50,7 @@
       //   font-family: "Millimetre-Light";
       font-size: 60px;
       letter-spacing: 4px;
+      font-family: "Millimetre-Regular";
     }
     h2:after {
       overflow: hidden;
@@ -58,18 +59,19 @@
 
       animation: ellipsis steps(4, end) 1500ms infinite;
       content: "\2026";
-      /* ascii code for the ellipsis character */
+
       width: 0px;
     }
     @keyframes ellipsis {
       to {
-        width: 50px;
+        width: 30px;
       }
     }
 
     h2 {
       margin: 5px;
       margin-top: 50px;
+      font-family: "Millimetre-light";
 
       font-size: 22.5px;
     }
@@ -100,6 +102,7 @@
       text-orientation: mixed;
       margin: 20px 10px;
       font-size: 20px;
+      letter-spacing: 5px;
       cursor: none;
     }
 

@@ -5,7 +5,7 @@
 
   cursor: none;
   .container {
-    width: 80vw;
+    width: 90vw;
     margin: 0 auto;
     display: flex;
     padding-top: 50px;
@@ -21,7 +21,7 @@
     position: absolute;
   }
   .left-section {
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: column;
 
@@ -37,7 +37,7 @@
       // border: red solid 1px;
     }
     .about-title:hover {
-      letter-spacing: 15px;
+      // letter-spacing: 15px;
       transition-duration: 1s;
     }
     h2 {
