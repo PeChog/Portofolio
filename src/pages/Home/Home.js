@@ -55,8 +55,9 @@ const Home = ({ onMouseEnter, onMouseLeave, isHovered }) => {
         <div className="presentation">
           <h1 onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
             Pierre-Etienne Chognard
+            <p>I love make creative design for websites</p>
           </h1>
-          <p>I love make creative design for websites</p>
+
           <h2>Currently looking for a front-end developer position</h2>
         </div>
       </motion.div>
