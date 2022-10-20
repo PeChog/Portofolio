@@ -12,6 +12,11 @@ import Eliott from "../pages/Eliott/Eliott";
 
 const AnimatedRoutes = () => {
   const [isHovered, setIshovered] = useState(false);
+  const [click, setClick] = useState(false);
+
+  const onClick = (event) => {
+    click ? setClick(false) : setClick(true);
+  };
 
   const onMouseEnter = () => {
     setIshovered(true);
@@ -32,6 +37,8 @@ const AnimatedRoutes = () => {
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
                 isHovered={isHovered}
+                onClick={onClick}
+                click={click}
               />
             }
           ></Route>

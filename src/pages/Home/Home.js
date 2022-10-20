@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import arrow from "../../assets/images/arrow.png";
 import "./home.scss";
 
-const Home = ({ onMouseEnter, onMouseLeave, isHovered }) => {
+const Home = ({ onMouseEnter, onMouseLeave, isHovered, click, onClick }) => {
   let cursorRef = useRef();
   const mousePos = (event) => {
     cursorRef.current.setAttribute(
@@ -24,10 +24,28 @@ const Home = ({ onMouseEnter, onMouseLeave, isHovered }) => {
         }}
         exit={{ opacity: 0 }}
       >
-        <div
-          className={isHovered ? "app-cursor-hover" : "app-cursor"}
-          ref={cursorRef}
-        ></div>
+        {isHovered ? (
+          <div
+            className={isHovered ? "app-cursor-hover" : "app-cursor"}
+            ref={cursorRef}
+          >
+            <p
+              style={{
+                marginTop: "42px",
+                marginLeft: "20px",
+                fontFamily: "Millimetre-Light",
+              }}
+            >
+              Click me !
+            </p>
+          </div>
+        ) : (
+          <div
+            className={isHovered ? "app-cursor-hover" : "app-cursor"}
+            ref={cursorRef}
+          ></div>
+        )}
+
         <div className="menu ">
           <Link className="home-link" to={"/contact"} state={{ mousePos }}>
             CONTACT
@@ -53,12 +71,17 @@ const Home = ({ onMouseEnter, onMouseLeave, isHovered }) => {
           <a href="https://github.com/PeChog">GH</a>
         </div>
         <div className="presentation">
-          <h1 onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+          <h1
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+            onClick={onClick}
+          >
             Pierre-Etienne Chognard
             <p>I love make creative design for websites</p>
           </h1>
-
-          <h2>Currently looking for a front-end developer position</h2>
+          {click ? (
+            <h2>Currently looking for a front-end developer position</h2>
+          ) : null}
         </div>
       </motion.div>
     </>
