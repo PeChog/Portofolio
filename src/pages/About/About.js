@@ -68,7 +68,7 @@ const About = () => {
               <div className="logos">
                 <img alt="github" src={Github} />
                 <img alt="Photoshop" src={Photoshop} />
-                <img alt="Figma" src={Figma} />
+                <img alt="Figma" src={Figma} style={{ width: "50px" }} />
               </div>
             </div>
             <h2 style={{ marginTop: "40px" }}>Curriculum vitæ</h2>

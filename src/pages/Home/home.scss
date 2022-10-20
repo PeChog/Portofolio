@@ -2,10 +2,7 @@
   min-height: 100vh;
   background-color: #eee7e1;
   cursor: none;
-  .container {
-    width: 90vw;
-    margin: 0 auto;
-  }
+
   .app-cursor {
     z-index: 1000;
     border-radius: 50%;
@@ -88,14 +85,14 @@
       display: inline-block;
       vertical-align: bottom;
 
-      animation: ellipsis steps(4, end) 1500ms infinite;
+      animation: ellipsis steps(3, end) 1500ms infinite;
       content: "\2026";
 
       width: 0px;
     }
     @keyframes ellipsis {
       to {
-        width: 30px;
+        width: 20px;
       }
     }
 
@@ -110,7 +107,9 @@
   .social {
     display: flex;
     // border: green solid 1px;
-    margin-top: 55vh;
+    margin-top: 52vh;
+    padding-right: 57px;
+
     width: 60px;
 
     flex-direction: column;
@@ -118,9 +117,10 @@
     position: relative;
 
     float: right;
+
     img {
       margin-bottom: 50px;
-      //   border: solid red 1px;
+      // border: solid red 1px;
       transform: rotate(+0.25turn);
       width: 150px;
       height: 80px;
@@ -135,6 +135,7 @@
       font-size: 20px;
       letter-spacing: 5px;
       cursor: none;
+      // border: solid yellow 1px;
     }
 
     a:hover {

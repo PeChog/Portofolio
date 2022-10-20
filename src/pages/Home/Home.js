@@ -47,7 +47,7 @@ const Home = ({ onMouseEnter, onMouseLeave, isHovered, click, onClick }) => {
         )}
 
         <div className="menu ">
-          <Link className="home-link" to={"/contact"} state={{ mousePos }}>
+          <Link className="home-link" to={"/contact"}>
             CONTACT
           </Link>
           <Link className="home-link" to={"/about"}>

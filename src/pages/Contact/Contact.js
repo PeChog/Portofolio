@@ -32,7 +32,7 @@ const Contact = () => {
         exit={{ width: "100%" }}
         className="meet-container"
       >
-        <motion.div className="meet">Contact</motion.div>
+        <motion.div className="meet">Contact.</motion.div>
       </motion.div>
       <div>
         <div className="mail container">
