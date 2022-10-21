@@ -80,15 +80,30 @@ const Eliott = ({ onMouseEnter, onMouseLeave, isHovered }) => {
               backoffice
             </h1>
             <div className="list">
-              <div>
-                <h2>Learnings</h2>
-              </div>
-              <div>
-                <h2>Technos</h2>
-              </div>
-              <div>
-                <h2>Process</h2>
-              </div>
+              <motion.a
+                href="https://github.com/PeChog/EP_front/tree/main/src"
+                className="github"
+                whileHover={{
+                  scale: 1.2,
+                  transformOrigin: "left center",
+                  textShadow: "0px 0px 8px rgb(255, 255, 255",
+                  backgroundColor: "none",
+                }}
+              >
+                Github
+              </motion.a>
+              <motion.a
+                href="http://eliottpaquet.com/"
+                className="deploy"
+                whileHover={{
+                  scale: 1.2,
+                  transformOrigin: "left center",
+                  textShadow: "0px 0px 8px rgb(255, 255, 255",
+                  backgroundColor: "none",
+                }}
+              >
+                Website
+              </motion.a>
             </div>
           </div>
         </motion.section>

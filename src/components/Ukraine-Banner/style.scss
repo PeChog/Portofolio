@@ -1,0 +1,45 @@
+.banner {
+  height: 10vh;
+  width: 100vw;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  overflow: hidden;
+
+  .blue {
+    height: 50%;
+    width: 100%;
+    background-color: #005bba;
+  }
+  .yellow {
+    height: 50%;
+    width: 100%;
+    background-color: #fed500;
+  }
+  .support {
+    font-size: 30px;
+    position: relative;
+    color: #262423;
+
+    animation: 60s slide-right infinite linear;
+    margin: 0;
+    bottom: 5vh;
+    z-index: 1000;
+    white-space: nowrap;
+    text-overflow: clip;
+  }
+
+  @keyframes slide-right {
+    from {
+      margin-left: 50%;
+      width: 1300%;
+    }
+    to {
+      margin-left: 00%;
+      width: 100%;
+    }
+  }
+}

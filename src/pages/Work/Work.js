@@ -16,7 +16,7 @@ const Work = () => {
     <motion.div
       onMouseMove={mousePos}
       className="work"
-      initial={{ opacity: 0 }}
+      initial={{ opacity: 0, width: 0 }}
       animate={{
         opacity: 1,
         transition: { duration: 0.8 },

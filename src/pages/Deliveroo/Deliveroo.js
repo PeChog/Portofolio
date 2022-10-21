@@ -72,22 +72,37 @@ const Deliveroo = ({ onMouseEnter, onMouseLeave, isHovered }) => {
         >
           <div>
             <h1>
-              School project to train React, a Deliveroo restaurant page. It was
-              nice and a very complete exercise because we need three importants
-              Things for front-end development: Fetching datas with useEffect,
-              render them in jsx with flexbox, algorithm with states, functions
-              to return a usable.
+              School project to train React, it's a Deliveroo restaurant page.
+              It was a very complete exercise because we need three importants
+              Things for front-end development: handle datas with an API, render
+              them in jsx with flexbox and co, algorithm, states and functions
+              to return a usable product.
             </h1>
             <div className="list">
-              <div>
-                <h2>Learnings</h2>
-              </div>
-              <div>
-                <h2>Technos</h2>
-              </div>
-              <div>
-                <h2>Process</h2>
-              </div>
+              <motion.a
+                href="https://github.com/PeChog/deliveroo-client"
+                className="github"
+                whileHover={{
+                  scale: 1.2,
+                  transformOrigin: "left center",
+                  textShadow: "0px 0px 8px rgb(255, 255, 255",
+                  backgroundColor: "none",
+                }}
+              >
+                Github
+              </motion.a>
+              <motion.a
+                href="https://pe-deliveroo.netlify.app/"
+                className="deploy"
+                whileHover={{
+                  scale: 1.2,
+                  transformOrigin: "left center",
+                  textShadow: "0px 0px 8px rgb(255, 255, 255",
+                  backgroundColor: "none",
+                }}
+              >
+                Website
+              </motion.a>
             </div>
           </div>
         </motion.section>

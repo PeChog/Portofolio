@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import portofolio from "../../assets/images/portofolio.png";
+
 import { useRef } from "react";
 
 import "./style.scss";
@@ -12,6 +13,7 @@ const Portofolio = ({ onMouseEnter, onMouseLeave, isHovered }) => {
       `top:${event.pageY - 20}px; left:${event.pageX - 20}px;`
     );
   };
+
   return (
     <motion.div
       onMouseMove={mousePos}
@@ -45,6 +47,7 @@ const Portofolio = ({ onMouseEnter, onMouseLeave, isHovered }) => {
             >
               Portofolio
             </motion.h1>
+
             <motion.img
               initial={{ opacity: -2 }}
               animate={{
@@ -54,6 +57,8 @@ const Portofolio = ({ onMouseEnter, onMouseLeave, isHovered }) => {
               exit={{ opacity: 0 }}
               alt="porto"
               src={portofolio}
+              onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave}
             />
           </motion.div>
         </section>
@@ -73,20 +78,35 @@ const Portofolio = ({ onMouseEnter, onMouseLeave, isHovered }) => {
             <h1>
               Starting a new personal project is really stimulating. I can try
               to do exactly what i want. And take time to explore new
-              frameworks. Like here with Framer-Motion. I did simple css motions
-              but it was a good exercise to understand stratings and endings
-              points, animatings on x/y axis with css features.
+              frameworks. Like here with Framer-Motion. I did simple features
+              but it was a good exercise to understand animations, page
+              transitions, x/y axis with css and JS.
             </h1>
             <div className="list">
-              <div>
-                <h2>Learnings</h2>
-              </div>
-              <div>
-                <h2>Technos</h2>
-              </div>
-              <div>
-                <h2>Process</h2>
-              </div>
+              <motion.a
+                href="https://github.com/PeChog/Portofolio"
+                className="github"
+                whileHover={{
+                  scale: 1.2,
+                  transformOrigin: "left center",
+                  textShadow: "0px 0px 8px rgb(255, 255, 255",
+                  backgroundColor: "none",
+                }}
+              >
+                Github
+              </motion.a>
+              <motion.a
+                href="https://portofolio-pe.netlify.app/"
+                className="deploy"
+                whileHover={{
+                  scale: 1.2,
+                  transformOrigin: "left center",
+                  textShadow: "0px 0px 8px rgb(255, 255, 255",
+                  backgroundColor: "none",
+                }}
+              >
+                Website
+              </motion.a>
             </div>
           </div>
         </motion.section>
