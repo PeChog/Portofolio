@@ -163,14 +163,12 @@
       display: inline-flex;
       flex-direction: column;
       gap: 5vw;
-      width: 100%;
 
       margin-top: 10vh;
       margin-left: 5vw;
 
       // border: red solid 1px;
       .home-link {
-        text-decoration: none;
         color: black;
         font-family: "outward-borders";
         font-size: 100px;
@@ -184,17 +182,10 @@
       margin-top: 50vh;
       margin-left: -24vw;
 
-      p {
-        font-size: 20px;
-        margin: 10px;
-        font-family: "Karric-Italic";
-      }
       h1 {
         // border: solid red 1px;
         //   font-family: "Millimetre-Light";
         font-size: 30px;
-        letter-spacing: 4px;
-        font-family: "Millimetre-Regular";
       }
       h2:after {
         overflow: hidden;
@@ -210,13 +201,6 @@
         to {
           width: 20px;
         }
-      }
-
-      h2 {
-        margin-top: 50px;
-        font-family: "Millimetre-light";
-
-        font-size: 22.5px;
       }
     }
     .social {
@@ -278,26 +262,13 @@
       margin-left: 5vw;
 
       // border: red solid 1px;
-      .home-link {
-        text-decoration: none;
-        color: black;
-        font-family: "outward-borders";
-        font-size: 100px;
-        cursor: none;
-      }
     }
     .presentation {
       // border: solid yellow 2px;
-      width: 92vw;
 
-      margin-top: 60vh;
+      margin-top: 70vh;
       margin-left: -24vw;
 
-      p {
-        font-size: 20px;
-        margin: 10px;
-        font-family: "Karric-Italic";
-      }
       h1 {
         // border: solid red 1px;
         //   font-family: "Millimetre-Light";
@@ -322,10 +293,10 @@
       }
 
       h2 {
-        margin-top: 50px;
+        margin-top: 30px;
         font-family: "Millimetre-light";
 
-        font-size: 22.5px;
+        font-size: 20px;
       }
     }
     .social {
@@ -338,26 +309,12 @@
 
       // width: 60px;
 
-      flex-direction: row;
-
       img {
-        margin-bottom: 5.5vh;
+        margin-bottom: 4.8vh;
         // border: solid red 1px;
         transform: rotate(+1turn);
         width: 10vw;
         height: 5vh;
-      }
-
-      a {
-        text-decoration: none;
-        color: black;
-        transform: rotate(-0.25turn);
-        margin-bottom: 8vh;
-
-        font-size: 15px;
-        letter-spacing: 5px;
-
-        // border: solid yellow 1px;
       }
     }
   }

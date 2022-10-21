@@ -117,8 +117,6 @@
 @media (max-width: 415px) {
   .about {
     min-height: 100vh;
-    color: #262423;
-    background-color: #eee7e1;
 
     cursor: none;
     .container {
@@ -151,19 +149,7 @@
         // letter-spacing: 15px;
         transition-duration: 1s;
       }
-      h2 {
-        font-size: 30px;
-        letter-spacing: 2px;
 
-        font-family: "Millimetre-Regular";
-      }
-      p {
-        margin-top: 50px;
-        font-size: 15px;
-        line-height: 30px;
-        letter-spacing: 2px;
-        font-family: "Millimetre-Light";
-      }
       .mern {
         margin-top: 40px;
         display: flex;
@@ -187,36 +173,12 @@
           }
         }
       }
-      a {
-        background-color: #262423;
-        border-radius: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        font-family: "Millimetre-Light";
-
-        font-size: 20px;
-        color: white;
-        height: 50px;
-        width: 150px;
-        margin-top: 30px;
-        margin-bottom: 50px;
-      }
     }
     .curri {
       margin-top: 83px;
     }
 
     .right-section {
-      width: 50%;
-      display: flex;
-      justify-content: flex-end;
-
-      // position: relative;
-
-      // border: solid green 1px;
-
       img {
         display: none;
 
