@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import arrow from "../../assets/images/arrow.png";
-import UkraineBanner from "../../components/Ukraine-Banner/UkraineBanner";
+// import UkraineBanner from "../../components/Ukraine-Banner/UkraineBanner";
 import "./home.scss";
 
 const Home = ({ onMouseEnter, onMouseLeave, isHovered, click, onClick }) => {
@@ -15,7 +15,7 @@ const Home = ({ onMouseEnter, onMouseLeave, isHovered, click, onClick }) => {
   };
   return (
     <>
-      {click ? <UkraineBanner /> : null}
+      {/* {click ? <UkraineBanner /> : null} */}
 
       <motion.div
         className="Home container"
