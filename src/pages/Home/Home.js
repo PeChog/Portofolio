@@ -5,7 +5,7 @@ import arrow from "../../assets/images/arrow.png";
 
 // import UkraineBanner from "../../components/Ukraine-Banner/UkraineBanner";
 
-import SoundToggle from "../../components/SoundToggle/SoundToggle";
+// import SoundToggle from "../../components/SoundToggle/SoundToggle";
 
 import "./home.scss";
 
