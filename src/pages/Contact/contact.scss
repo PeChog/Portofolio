@@ -5,8 +5,10 @@
   cursor: none;
 
   .container {
-    width: 90vw;
+    max-width: 90vw;
+
     margin: 0 auto;
+    // border: solid red 1px;
   }
   .app-cursor {
     z-index: 1000;
@@ -21,10 +23,11 @@
   .meet-container {
     display: inline-block;
     margin-top: 150px;
+    // border: solid green 1px;
   }
   .meet {
     max-height: 200px;
-    margin-left: 60px;
+    margin-left: 4.32vw;
 
     font-size: 150px;
     // border: red solid 1px;

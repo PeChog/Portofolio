@@ -43,7 +43,16 @@ const AnimatedRoutes = () => {
             }
           ></Route>
           <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/about" element={<About />}></Route>
+          <Route
+            path="/about"
+            element={
+              <About
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
+                isHovered={isHovered}
+              />
+            }
+          ></Route>
           <Route path="/work" element={<Work />}></Route>
           <Route
             path="/portofolio"
@@ -77,9 +86,6 @@ const AnimatedRoutes = () => {
           ></Route>
         </Routes>
       </AnimatePresence>
-      {/* <AnimatePresence>
-        <Routes></Routes>
-      </AnimatePresence> */}
     </>
   );
 };

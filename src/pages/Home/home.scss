@@ -47,7 +47,7 @@
   .menu {
     display: inline-flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 6vh;
     margin-left: 80px;
     max-width: 24vw;
     // border: red solid 1px;
@@ -55,21 +55,23 @@
       text-decoration: none;
       color: black;
       font-family: "outward-block";
-      font-size: 250px;
+      font-size: 17vw;
       cursor: none;
     }
     .home-link:hover {
       font-family: "outward-borders";
     }
   }
+
   .presentation {
     display: inline-block;
     position: absolute;
 
     // border: solid yellow 2px;
     width: 40vw;
-    margin-left: 15vw;
-    margin-top: 37vh;
+    margin-left: 20vw;
+    margin-top: 45vh;
+
     p {
       font-size: 20px;
       margin: 10px;
@@ -99,7 +101,7 @@
 
     h2 {
       margin: 5px;
-      margin-top: 50px;
+      margin-top: 5vh;
       font-family: "Millimetre-light";
 
       font-size: 22.5px;

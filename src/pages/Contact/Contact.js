@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useRef } from "react";
 
+// import SoundToggle from "../../components/SoundToggle/SoundToggle";
+
 import "./contact.scss";
 
 const Contact = () => {
@@ -31,16 +33,16 @@ const Contact = () => {
             transition: { duration: 3 },
           }}
           exit={{ width: "100%" }}
-          className="meet-container"
+          className="meet-container container"
         >
           <motion.div className="meet">Contact.</motion.div>
         </motion.div>
-        <div>
-          <div className="mail container">
+        <div className="container">
+          <div className="mail">
             Mail:
             <a href="pe.chognard@gmail.com"> pe.chognard@gmail.com</a>
           </div>
-          <div className="infos container">
+          <div className="infos">
             <span>Social:</span>
             <div className="links">
               <a href="https://www.linkedin.com/in/pierre-etienne-chognard-39491722b/">

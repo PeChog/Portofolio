@@ -20,6 +20,19 @@
     overflow: hidden;
     position: absolute;
   }
+  .app-cursor-hover {
+    z-index: 1000;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #eee7e1;
+    pointer-events: none;
+
+    overflow: hidden;
+    position: absolute;
+  }
+
   .left-section {
     width: 70%;
     display: flex;
@@ -29,6 +42,7 @@
       font-family: "outward-block";
 
       font-size: 300px;
+      display: inline-block;
 
       transition: 0s letter-spacing;
       content-visibility: auto;

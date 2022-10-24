@@ -61,6 +61,16 @@ const About = () => {
             subject, it is quite natural that I decided to start a reconversion
             in web development.
           </p>
+          <h2>Why ?</h2>
+          <p>
+            I love to travel. To meet new people. I learn a lot from others and
+            I like to learn and make my own way of thinking. The job of
+            developer allows me to do just that. To give the necessary tools to
+            create and then allow each one to express himself in his own way. I
+            really like the multidisciplinary ecosystem that a digital team
+            offers. There are many challenges and the ratio between technicality
+            and creativity is perfect to be continuously stimulated.
+          </p>
           <h2 style={{ marginTop: "50px" }}>
             My stack
             <div className="mern">
