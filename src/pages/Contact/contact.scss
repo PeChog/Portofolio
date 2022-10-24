@@ -41,6 +41,7 @@
     margin-top: 40px;
 
     display: flex;
+    font-family: "Millimetre-light";
 
     a {
       color: #eee7e1;
@@ -49,17 +50,20 @@
       margin-bottom: 2px;
       padding-bottom: 3px;
       cursor: none;
+      font-family: "Millimetre-light";
     }
   }
   .infos {
     display: flex;
     margin-top: 20px;
+    font-family: "Millimetre-light";
 
     a {
       text-decoration: none;
       margin: 10px;
       color: #eee7e1;
       cursor: none;
+      font-family: "Millimetre-light";
     }
     a:hover {
       text-decoration: line-through;
