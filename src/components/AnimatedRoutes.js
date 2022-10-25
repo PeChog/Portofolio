@@ -15,7 +15,7 @@ const AnimatedRoutes = () => {
   const [click, setClick] = useState(false);
 
   const onClick = (event) => {
-    click ? setClick(false) : setClick(true);
+    setClick(!click);
   };
 
   const onMouseEnter = () => {

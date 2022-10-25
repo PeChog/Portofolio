@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import eliott from "../../assets/images/eliott.png";
+import SoundToggle from "../../components/SoundToggle/SoundToggle";
 
 import "./style.scss";
 
@@ -23,6 +24,7 @@ const Eliott = ({ onMouseEnter, onMouseLeave, isHovered }) => {
       exit={{ opacity: 0 }}
       className="porto-page"
     >
+      <SoundToggle />
       <div
         className={isHovered ? "app-cursor-left" : "app-cursor"}
         ref={cursorRef}

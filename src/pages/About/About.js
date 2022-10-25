@@ -6,6 +6,7 @@ import Figma from "../../assets/images/figma.png";
 import Mern from "../../assets/images/mern.png";
 import Photoshop from "../../assets/images/photoshop.png";
 import Github from "../../assets/images/Github.png";
+import SoundToggle from "../../components/SoundToggle/SoundToggle";
 
 import "./about.scss";
 
@@ -28,6 +29,7 @@ const About = () => {
       }}
       exit={{ opacity: 0 }}
     >
+      <SoundToggle />
       <div className="app-cursor" ref={cursorRef}></div>
       <div className="container">
         <div className="left-section">

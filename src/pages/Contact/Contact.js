@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useRef } from "react";
 
-// import SoundToggle from "../../components/SoundToggle/SoundToggle";
+import SoundToggle from "../../components/SoundToggle/SoundToggle";
 
 import "./contact.scss";
 
@@ -25,6 +25,7 @@ const Contact = () => {
         }}
         exit={{ opacity: 0 }}
       >
+        <SoundToggle />
         <div className="app-cursor" ref={cursorRef}></div>
         <motion.div
           initial={{ width: "0px" }}

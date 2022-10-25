@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import SoundToggle from "../../components/SoundToggle/SoundToggle";
 
 import "./work.scss";
 
@@ -23,6 +24,7 @@ const Work = () => {
       }}
       exit={{ opacity: 0 }}
     >
+      <SoundToggle />
       <div className="app-cursor" ref={cursorRef}></div>
       <div className="container">
         <div className="work-menu">

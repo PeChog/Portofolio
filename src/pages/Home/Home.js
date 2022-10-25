@@ -8,6 +8,7 @@ import arrow from "../../assets/images/arrow.png";
 // import SoundToggle from "../../components/SoundToggle/SoundToggle";
 
 import "./home.scss";
+import SoundToggle from "../../components/SoundToggle/SoundToggle";
 
 const Home = ({ onMouseEnter, onMouseLeave, isHovered, click, onClick }) => {
   let cursorRef = useRef();
@@ -31,6 +32,7 @@ const Home = ({ onMouseEnter, onMouseLeave, isHovered, click, onClick }) => {
         }}
         exit={{ opacity: 0 }}
       >
+        <SoundToggle />
         {isHovered ? (
           <div
             className={isHovered ? "app-cursor-hover" : "app-cursor"}

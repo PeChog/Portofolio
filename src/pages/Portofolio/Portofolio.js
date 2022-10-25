@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import portofolio from "../../assets/images/portofolio.png";
+import SoundToggle from "../../components/SoundToggle/SoundToggle";
 
 import { useRef } from "react";
 
@@ -25,6 +26,7 @@ const Portofolio = ({ onMouseEnter, onMouseLeave, isHovered }) => {
       exit={{ opacity: 0 }}
       className="porto-page"
     >
+      <SoundToggle />
       <div
         className={isHovered ? "app-cursor-left" : "app-cursor"}
         ref={cursorRef}
