@@ -1,0 +1,25 @@
+.app-cursor {
+  z-index: 1000;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cbe11e;
+  pointer-events: none;
+  overflow: hidden;
+  position: absolute;
+}
+
+.app-cursor-hover {
+  transition-duration: 250ms;
+  z-index: 1000;
+  border-radius: 76% 24% 46% 54% / 87% 73% 27% 13%;
+
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  pointer-events: none;
+  background-color: #eee7e1;
+  overflow: hidden;
+  position: absolute;
+  animation: morphing 5s infinite;
+}

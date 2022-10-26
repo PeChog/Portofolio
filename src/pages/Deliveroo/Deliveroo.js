@@ -1,19 +1,35 @@
-import { useRef } from "react";
 import { motion } from "framer-motion";
 
 import deliveroo from "../../assets/images/deliveroo.png";
-import SoundToggle from "../../components/SoundToggle/SoundToggle";
+// import SoundToggle from "../../components/SoundToggle/SoundToggle";
 
 import "./style.scss";
 
-const Deliveroo = ({ onMouseEnter, onMouseLeave, isHovered }) => {
-  let cursorRef = useRef();
-  const mousePos = (event) => {
-    cursorRef.current.setAttribute(
-      "style",
-      `top:${event.pageY - 20}px; left:${event.pageX - 20}px;`
-    );
-  };
+const Deliveroo = ({
+  onMouseEnter,
+  onMouseLeave,
+  isHovered,
+  mousePos,
+  cursorRef,
+}) => {
+  let isPhone = window.innerWidth < 450;
+  const variants = isPhone
+    ? {
+        initial: {
+          height: 0,
+        },
+        animate: {
+          height: "50vh",
+        },
+      }
+    : {
+        initial: {
+          width: 0,
+        },
+        animate: {
+          width: "45vw",
+        },
+      };
   return (
     <motion.div
       onMouseMove={mousePos}
@@ -25,7 +41,7 @@ const Deliveroo = ({ onMouseEnter, onMouseLeave, isHovered }) => {
       exit={{ opacity: 0 }}
       className="porto-page"
     >
-      <SoundToggle />
+      {/* <SoundToggle /> */}
       <div
         className={isHovered ? "app-cursor-left" : "app-cursor"}
         ref={cursorRef}
@@ -33,9 +49,10 @@ const Deliveroo = ({ onMouseEnter, onMouseLeave, isHovered }) => {
       <div className="container">
         <section className="left-section">
           <motion.div
+            variants={variants}
             className="title-cont"
-            initial={{ width: 0 }}
-            animate={{ width: "45vw" }}
+            initial="initial"
+            animate="animate"
             transition={{ duration: 1.5 }}
           >
             <motion.h1
@@ -57,6 +74,7 @@ const Deliveroo = ({ onMouseEnter, onMouseLeave, isHovered }) => {
               exit={{ opacity: 0 }}
               alt="del"
               src={deliveroo}
+              className="home-page"
             />
           </motion.div>
         </section>
@@ -72,7 +90,7 @@ const Deliveroo = ({ onMouseEnter, onMouseLeave, isHovered }) => {
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
         >
-          <div>
+          <div className="right-content">
             <h1>
               School project to train React, it's a Deliveroo restaurant page.
               It was a very complete exercise because we need three importants

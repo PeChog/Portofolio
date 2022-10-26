@@ -1,18 +1,34 @@
 import { motion } from "framer-motion";
-import { useRef } from "react";
 import eliott from "../../assets/images/eliott.png";
-import SoundToggle from "../../components/SoundToggle/SoundToggle";
+// import SoundToggle from "../../components/SoundToggle/SoundToggle";
 
 import "./style.scss";
 
-const Eliott = ({ onMouseEnter, onMouseLeave, isHovered }) => {
-  let cursorRef = useRef();
-  const mousePos = (event) => {
-    cursorRef.current.setAttribute(
-      "style",
-      `top:${event.pageY - 20}px; left:${event.pageX - 20}px;`
-    );
-  };
+const Eliott = ({
+  onMouseEnter,
+  onMouseLeave,
+  isHovered,
+  mousePos,
+  cursorRef,
+}) => {
+  let isPhone = window.innerWidth < 450;
+  const variants = isPhone
+    ? {
+        initial: {
+          height: 0,
+        },
+        animate: {
+          height: "50vh",
+        },
+      }
+    : {
+        initial: {
+          width: 0,
+        },
+        animate: {
+          width: "45vw",
+        },
+      };
   return (
     <motion.div
       onMouseMove={mousePos}
@@ -24,7 +40,7 @@ const Eliott = ({ onMouseEnter, onMouseLeave, isHovered }) => {
       exit={{ opacity: 0 }}
       className="porto-page"
     >
-      <SoundToggle />
+      {/* <SoundToggle /> */}
       <div
         className={isHovered ? "app-cursor-left" : "app-cursor"}
         ref={cursorRef}
@@ -32,9 +48,10 @@ const Eliott = ({ onMouseEnter, onMouseLeave, isHovered }) => {
       <div className="container">
         <section className="left-section">
           <motion.div
+            variants={variants}
             className="title-cont"
-            initial={{ width: 0 }}
-            animate={{ width: "45vw" }}
+            initial="initial"
+            animate="animate"
             transition={{ duration: 1.5 }}
           >
             <motion.h1
@@ -56,6 +73,7 @@ const Eliott = ({ onMouseEnter, onMouseLeave, isHovered }) => {
               exit={{ opacity: 0 }}
               alt="porto"
               src={eliott}
+              className="home-page"
             />
           </motion.div>
         </section>
@@ -71,7 +89,7 @@ const Eliott = ({ onMouseEnter, onMouseLeave, isHovered }) => {
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
         >
-          <div>
+          <div className="right-content">
             <h1>
               My first free-lance project i made for an artist called Eliott
               Paquet. I started his full-stack website just after my bootcamp,

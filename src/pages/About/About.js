@@ -1,23 +1,15 @@
 import { motion } from "framer-motion";
-import { useRef } from "react";
 
 import ProfilPicture from "../../assets/images/PP.jpeg";
 import Figma from "../../assets/images/figma.png";
 import Mern from "../../assets/images/mern.png";
 import Photoshop from "../../assets/images/photoshop.png";
 import Github from "../../assets/images/Github.png";
-import SoundToggle from "../../components/SoundToggle/SoundToggle";
+// import SoundToggle from "../../components/SoundToggle/SoundToggle";
 
 import "./about.scss";
 
-const About = () => {
-  let cursorRef = useRef();
-  const mousePos = (event) => {
-    cursorRef.current.setAttribute(
-      "style",
-      `top:${event.pageY - 20}px; left:${event.pageX - 20}px;`
-    );
-  };
+const About = ({ mousePos, cursorRef }) => {
   return (
     <motion.div
       className="about"
@@ -29,7 +21,7 @@ const About = () => {
       }}
       exit={{ opacity: 0 }}
     >
-      <SoundToggle />
+      {/* <SoundToggle /> */}
       <div className="app-cursor" ref={cursorRef}></div>
       <div className="container">
         <div className="left-section">

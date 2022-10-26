@@ -1,23 +1,24 @@
-import { useRef } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import arrow from "../../assets/images/arrow.png";
 
 // import UkraineBanner from "../../components/Ukraine-Banner/UkraineBanner";
 
+import "./home.scss";
 // import SoundToggle from "../../components/SoundToggle/SoundToggle";
 
-import "./home.scss";
-import SoundToggle from "../../components/SoundToggle/SoundToggle";
-
-const Home = ({ onMouseEnter, onMouseLeave, isHovered, click, onClick }) => {
-  let cursorRef = useRef();
-  const mousePos = (event) => {
-    cursorRef.current.setAttribute(
-      "style",
-      `top:${event.pageY - 20}px; left:${event.pageX - 20}px;`
-    );
-  };
+const Home = ({
+  onMouseEnter,
+  onMouseLeave,
+  click,
+  onClick,
+  isHovered,
+  cursorRef,
+  mousePos,
+  // isPlaying,
+  // audioPlayer,
+  // togglePlayPause,
+}) => {
   return (
     <>
       {/* {click ? <UkraineBanner /> : null} */}
@@ -32,7 +33,11 @@ const Home = ({ onMouseEnter, onMouseLeave, isHovered, click, onClick }) => {
         }}
         exit={{ opacity: 0 }}
       >
-        <SoundToggle />
+        {/* <SoundToggle
+          audioPlayer={audioPlayer}
+          togglePlayPause={togglePlayPause}
+          isPlaying={isPlaying}
+        /> */}
         {isHovered ? (
           <div
             className={isHovered ? "app-cursor-hover" : "app-cursor"}
@@ -56,7 +61,13 @@ const Home = ({ onMouseEnter, onMouseLeave, isHovered, click, onClick }) => {
         )}
 
         <div className="menu ">
-          <Link className="home-link" to={"/contact"}>
+          <Link
+            className="home-link"
+            to={"/contact"}
+            // isPlaying={isPlaying}
+            // audioPlayer={audioPlayer}
+            // togglePlayPause={togglePlayPause}
+          >
             CONTACT
           </Link>
           <Link className="home-link" to={"/about"}>

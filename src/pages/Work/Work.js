@@ -1,18 +1,10 @@
-import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import SoundToggle from "../../components/SoundToggle/SoundToggle";
+// import SoundToggle from "../../components/SoundToggle/SoundToggle";
 
 import "./work.scss";
 
-const Work = () => {
-  let cursorRef = useRef();
-  const mousePos = (event) => {
-    cursorRef.current.setAttribute(
-      "style",
-      `top:${event.pageY - 20}px; left:${event.pageX - 20}px;`
-    );
-  };
+const Work = ({ cursorRef, mousePos }) => {
   return (
     <motion.div
       onMouseMove={mousePos}
@@ -24,7 +16,7 @@ const Work = () => {
       }}
       exit={{ opacity: 0 }}
     >
-      <SoundToggle />
+      {/* <SoundToggle /> */}
       <div className="app-cursor" ref={cursorRef}></div>
       <div className="container">
         <div className="work-menu">

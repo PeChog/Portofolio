@@ -28,6 +28,7 @@
     width: 90vw;
     margin: 0 auto;
     border-right: #262423 solid 1.5px;
+    border-left: #262423 solid 1.5px;
     display: flex;
     .title-cont {
       height: 100vh;
@@ -44,9 +45,9 @@
         font-size: 250px;
         padding-top: 48px;
       }
-      img {
-        width: 500px;
-        margin-left: 70px;
+      .home-page {
+        width: 30vw;
+        margin-left: 7.4vw;
       }
     }
     .right-section {
@@ -89,5 +90,100 @@
         // border: yellow solid 2px;
       }
     }
+  }
+}
+
+@media (max-width: 420px) {
+  .porto-page {
+    min-height: 100vh;
+    min-width: 100vw;
+    .container {
+      display: flex;
+      flex-direction: column;
+
+      .left-section {
+        .title-cont {
+          h1 {
+            font-size: 150px;
+            margin-bottom: 3vh;
+          }
+        }
+        .home-page {
+          width: 60vw;
+          align-self: center;
+          margin-left: 0;
+        }
+      }
+      .right-section {
+        .right-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h1 {
+            padding-left: 0;
+            padding-top: 5vh;
+          }
+          .list {
+            padding-top: 0.5vh;
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+
+  .app-cursor {
+    display: none;
+  }
+  .app-cursor-left {
+    display: none;
+  }
+}
+
+@media (max-width: 376px) {
+  .porto-page {
+    min-height: 100vh;
+    min-width: 100vw;
+    .container {
+      display: flex;
+      flex-direction: column;
+
+      .left-section {
+        .title-cont {
+          h1 {
+            font-size: 120px;
+            margin-bottom: 3vh;
+          }
+        }
+        .home-page {
+          width: 60vw;
+          align-self: center;
+          margin-left: 0;
+        }
+      }
+      .right-section {
+        .right-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h1 {
+            padding-left: 0;
+            padding-top: 5vh;
+            width: 85%;
+          }
+          .list {
+            padding-top: 0.5vh;
+            width: 85%;
+          }
+        }
+      }
+    }
+  }
+
+  .app-cursor {
+    display: none;
+  }
+  .app-cursor-left {
+    display: none;
   }
 }

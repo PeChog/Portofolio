@@ -1,22 +1,21 @@
-import { useRef, useState } from "react";
-
 import Burning from "../../assets/sound/Burning.mp3";
 
 import "./style.scss";
 
-const SoundToggle = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const audioPlayer = useRef();
+const SoundToggle = ({ isPlaying, togglePlayPause, audioPlayer }) => {
+  // const [isPlaying, setIsPlaying] = useState(false);
+  // const audioPlayer = useRef();
 
-  const togglePlayPause = () => {
-    const prevValue = isPlaying;
-    setIsPlaying(!prevValue);
-    if (!prevValue) {
-      audioPlayer.current.play();
-    } else {
-      audioPlayer.current.pause();
-    }
-  };
+  // const togglePlayPause = () => {
+  //   const prevValue = isPlaying;
+  //   setIsPlaying(!prevValue);
+  //   if (!prevValue) {
+  //     audioPlayer.current.play();
+  //   } else {
+  //     audioPlayer.current.pause();
+  //   }
+  // };
+
   return (
     <>
       <div

@@ -1,18 +1,16 @@
 import { motion } from "framer-motion";
-import { useRef } from "react";
 
-import SoundToggle from "../../components/SoundToggle/SoundToggle";
+// import SoundToggle from "../../components/SoundToggle/SoundToggle";
 
 import "./contact.scss";
 
-const Contact = () => {
-  let cursorRef = useRef();
-  const mousePos = (event) => {
-    cursorRef.current.setAttribute(
-      "style",
-      `top:${event.pageY - 20}px; left:${event.pageX - 20}px;`
-    );
-  };
+const Contact = ({
+  mousePos,
+  cursorRef,
+  // isPlaying,
+  // audioPlayer,
+  // togglePlayPause,
+}) => {
   return (
     <>
       <motion.div
@@ -25,7 +23,11 @@ const Contact = () => {
         }}
         exit={{ opacity: 0 }}
       >
-        <SoundToggle />
+        {/* <SoundToggle
+          audioPlayer={audioPlayer}
+          togglePlayPause={togglePlayPause}
+          isPlaying={isPlaying}
+        /> */}
         <div className="app-cursor" ref={cursorRef}></div>
         <motion.div
           initial={{ width: "0px" }}
