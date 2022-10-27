@@ -90,15 +90,7 @@ const Eliott = ({
           onMouseLeave={onMouseLeave}
         >
           <div className="right-content">
-            <div
-              style={{
-                fontFamily: "Millimetre-Regular",
-                fontSize: "45px",
-                textDecoration: "underline",
-              }}
-            >
-              Free-lance
-            </div>
+            <div className="free">Free-lance</div>
             <h1>
               My first free-lance project i made for an artist called Eliott
               Paquet. I started his full-stack website just after my bootcamp,

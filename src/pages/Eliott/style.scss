@@ -54,6 +54,13 @@
       width: 100%;
       display: flex;
       justify-content: center;
+      .free {
+        font-family: "Millimetre-Regular";
+        font-size: 3vw;
+        align-self: center;
+
+        text-decoration: underline;
+      }
       h1 {
         font-family: "Millimetre-Light";
         font-size: 25px;
@@ -62,6 +69,7 @@
         padding-left: 35px;
         width: 90%;
       }
+
       .list {
         display: flex;
         justify-content: space-around;
@@ -118,6 +126,14 @@
           display: flex;
           flex-direction: column;
           align-items: center;
+          .free {
+            font-family: "Millimetre-Regular";
+            font-size: 8vw;
+            align-self: flex-start;
+            margin-left: 5vw;
+
+            text-decoration: underline;
+          }
           h1 {
             padding-left: 0;
             padding-top: 5vh;
@@ -165,6 +181,14 @@
           display: flex;
           flex-direction: column;
           align-items: center;
+          .free {
+            font-family: "Millimetre-Regular";
+            font-size: 8vw;
+            align-self: flex-start;
+            margin-left: 7vw;
+
+            text-decoration: underline;
+          }
           h1 {
             padding-left: 0;
             padding-top: 5vh;

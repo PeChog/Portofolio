@@ -91,15 +91,7 @@ const Deliveroo = ({
           onMouseLeave={onMouseLeave}
         >
           <div className="right-content">
-            <div
-              style={{
-                fontFamily: "Millimetre-Regular",
-                fontSize: "45px",
-                textDecoration: "underline",
-              }}
-            >
-              School project
-            </div>
+            <div className="school">School project</div>
             <h1>
               School project to train React, it's a Deliveroo restaurant page.
               It was a very complete exercise because we need three importants

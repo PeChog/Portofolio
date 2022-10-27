@@ -95,17 +95,7 @@ const Portofolio = ({
           onMouseLeave={onMouseLeave}
         >
           <div className="right-content">
-            <div
-              style={{
-                fontFamily: "Millimetre-Regular",
-                fontSize: "45px",
-
-                textDecoration: "underline",
-                marginLeft: "22vw",
-              }}
-            >
-              Personal project
-            </div>
+            <div className="personal">Personal project</div>
             <h1>
               Starting a new personal project is really stimulating. You can
               take time to explore new frameworks, like here with Framer-Motion.
