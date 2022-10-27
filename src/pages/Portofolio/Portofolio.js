@@ -101,7 +101,7 @@ const Portofolio = ({
                 fontSize: "45px",
 
                 textDecoration: "underline",
-                marginLeft: "18vw",
+                marginLeft: "22vw",
               }}
             >
               Personal project
