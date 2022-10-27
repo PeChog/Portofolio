@@ -94,10 +94,9 @@ const Deliveroo = ({
             <div className="school">School project</div>
             <h1>
               School project to train React, it's a Deliveroo restaurant page.
-              It was a very complete exercise because we need three importants
-              Things for front-end development: handle datas with an API, render
-              them in jsx with flexbox and co, algorithm, states and functions
-              to return a usable product.
+              It was a good exercise because i did importants things for
+              front-end development: handle datas with an API, algo, hooks to
+              return a usable product.
             </h1>
             <div className="list">
               <motion.a

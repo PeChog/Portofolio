@@ -48,20 +48,13 @@ const About = ({ mousePos, cursorRef }) => {
           <p>
             After 10 years in the music business, in event and project
             management, I started to wonder about my future. I needed to evolve,
-            to do something else, a flame was driving me to change. I am still a
-            big fan of music and I continue to make and play it on stage.
-            However I had done a bit of a tour. Having always been passionate
-            about the world of internet and apps and constantly monitoring this
-            subject, it is quite natural that I decided to start a reconversion
-            in web development.
+            to do something else. Having always been passionate about the world
+            of web and apps and constantly monitoring this subject, it is quite
+            natural that I decided to start a reconversion in web development.
           </p>
-          <h2>Why ?</h2>
+          <h2 style={{ marginTop: "50px" }}>Why development?</h2>
           <p>
-            I love to travel. To meet new people. I learn a lot from others and
-            I like to learn and make my own way of thinking. The job of
-            developer allows me to do just that. To give the necessary tools to
-            create and then allow each one to express himself in his own way. I
-            really like the multidisciplinary ecosystem that a digital team
+            I really like the multidisciplinary ecosystem that a digital team
             offers. There are many challenges and the ratio between technicality
             and creativity is perfect to be continuously stimulated.
           </p>

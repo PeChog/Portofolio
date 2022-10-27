@@ -95,10 +95,10 @@ const Eliott = ({
               My first free-lance project i made for an artist called Eliott
               Paquet. I started his full-stack website just after my bootcamp,
               it was very challenging. For the first time i had to make a
-              backoffice, i decided to do it only with code, forget forest admin
-              and co... I wasn't into Scss, i did a carousel, i manage datas
-              back/front for expositions and pictures that he can update on
-              backoffice
+              backoffice. I did a strong back-end for this one. Front-end was
+              managing API, carousel, hooks, i learned a lot of css properties
+              and global jsx rules too. Responsive on mobile and full-screen as
+              contract specifications.
             </h1>
             <div className="list">
               <motion.a

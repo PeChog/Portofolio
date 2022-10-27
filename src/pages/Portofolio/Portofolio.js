@@ -98,7 +98,7 @@ const Portofolio = ({
             <div className="personal">Personal project</div>
             <h1>
               Starting a new personal project is really stimulating. You can
-              take time to explore new frameworks, like here with Framer-Motion.
+              take time to explore new libraries, like here with Framer-Motion.
               I did simple motions but it was a good exercise to understand
               animations, page transitions, x/y axis.
             </h1>

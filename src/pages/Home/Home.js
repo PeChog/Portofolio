@@ -49,7 +49,7 @@ const Home = ({
                   fontFamily: "Millimetre-Light",
                 }}
               >
-                Click me !
+                Click here !
               </p>
             </div>
           ) : (
