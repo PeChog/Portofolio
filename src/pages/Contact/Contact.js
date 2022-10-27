@@ -43,7 +43,7 @@ const Contact = ({
         <div className="container">
           <div className="mail">
             Mail:
-            <a href="pe.chognard@gmail.com"> pe.chognard@gmail.com</a>
+            <span style={{ marginLeft: "0.6vw" }}>pe.chognard@gmail.com</span>
           </div>
           <div className="infos">
             <span>Social:</span>
