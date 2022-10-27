@@ -64,7 +64,7 @@ const Portofolio = ({
               }}
               exit={{ opacity: 0 }}
             >
-              Portofolio
+              Portfolio
             </motion.h1>
 
             <motion.img
@@ -116,7 +116,7 @@ const Portofolio = ({
                 Github
               </motion.a>
               <motion.a
-                href="https://portofolio-pe.netlify.app/"
+                href="https://portfolio-pe.netlify.app/"
                 className="deploy"
                 whileHover={{
                   scale: 1.1,

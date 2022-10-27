@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 
-import ProfilPicture from "../../assets/images/PP.jpeg";
+import ProfilPicture from "../../assets/images/profilp.jpg";
 import Figma from "../../assets/images/figma.png";
 import Mern from "../../assets/images/mern.png";
 import Photoshop from "../../assets/images/photoshop.png";
 import Github from "../../assets/images/Github.png";
+// import memoji from "../../assets/images/memoji.png";
 // import SoundToggle from "../../components/SoundToggle/SoundToggle";
 
 import "./about.scss";
