@@ -26,7 +26,7 @@ const Work = ({ cursorRef, mousePos }) => {
               whileHover={{ letterSpacing: "5px" }}
               transition={{ duration: 0.6 }}
             >
-              Portofolio
+              Portfolio
             </motion.h1>
           </Link>
           <Link className="link" to={"/eliott"}>
