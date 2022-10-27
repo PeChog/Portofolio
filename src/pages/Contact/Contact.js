@@ -52,9 +52,9 @@ const Contact = ({
                 Linkedin
               </a>
               <a href="https://github.com/PeChog">Github</a>
-              <a href="https://www.instagram.com/quasardjkatarina_officiel/?hl=fr">
+              {/* <a href="https://www.instagram.com/quasardjkatarina_officiel/?hl=fr">
                 Instagram
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

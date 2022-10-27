@@ -95,20 +95,30 @@ const Portofolio = ({
           onMouseLeave={onMouseLeave}
         >
           <div className="right-content">
+            <div
+              style={{
+                fontFamily: "Millimetre-Regular",
+                fontSize: "45px",
+
+                textDecoration: "underline",
+                marginLeft: "18vw",
+              }}
+            >
+              Personal project
+            </div>
             <h1>
-              Starting a new personal project is really stimulating. I can try
-              to do exactly what i want. And take time to explore new
-              frameworks. Like here with Framer-Motion. I did simple features
-              but it was a good exercise to understand animations, page
-              transitions, x/y axis with css and JS.
+              Starting a new personal project is really stimulating. You can
+              take time to explore new frameworks, like here with Framer-Motion.
+              I did simple motions but it was a good exercise to understand
+              animations, page transitions, x/y axis.
             </h1>
             <div className="list">
               <motion.a
                 href="https://github.com/PeChog/Portofolio"
                 className="github"
                 whileHover={{
-                  scale: 1.2,
-                  transformOrigin: "left center",
+                  scale: 1.1,
+
                   textShadow: "0px 0px 8px rgb(255, 255, 255",
                   backgroundColor: "none",
                 }}
@@ -119,8 +129,8 @@ const Portofolio = ({
                 href="https://portofolio-pe.netlify.app/"
                 className="deploy"
                 whileHover={{
-                  scale: 1.2,
-                  transformOrigin: "left center",
+                  scale: 1.1,
+
                   textShadow: "0px 0px 8px rgb(255, 255, 255",
                   backgroundColor: "none",
                 }}

@@ -53,8 +53,7 @@ const Work = ({ cursorRef, mousePos }) => {
             <h2>Works.</h2>
             <p>
               Selected works. School, personal and free-lance. It shows you some
-              of my skills with react and plugins. Feel free to ask if you have
-              some questions.
+              of my skills with react. Feel free to ask if you have questions.
             </p>
           </div>
         </div>

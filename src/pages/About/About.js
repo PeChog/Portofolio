@@ -82,8 +82,8 @@ const About = ({ mousePos, cursorRef }) => {
               href="https://www.dropbox.com/s/fj41ym7d51g07d5/CV_dev_front-end_Chognard_PE.pdf?dl=0"
               className="CV"
               whileHover={{
-                scale: 1.2,
-                transformOrigin: "left center",
+                scale: 1.1,
+
                 textShadow: "0px 0px 8px rgb(255, 255, 255",
                 backgroundColor: "none",
               }}

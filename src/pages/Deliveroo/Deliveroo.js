@@ -91,6 +91,15 @@ const Deliveroo = ({
           onMouseLeave={onMouseLeave}
         >
           <div className="right-content">
+            <div
+              style={{
+                fontFamily: "Millimetre-Regular",
+                fontSize: "45px",
+                textDecoration: "underline",
+              }}
+            >
+              School project
+            </div>
             <h1>
               School project to train React, it's a Deliveroo restaurant page.
               It was a very complete exercise because we need three importants
@@ -103,8 +112,8 @@ const Deliveroo = ({
                 href="https://github.com/PeChog/deliveroo-client"
                 className="github"
                 whileHover={{
-                  scale: 1.2,
-                  transformOrigin: "left center",
+                  scale: 1.1,
+
                   textShadow: "0px 0px 8px rgb(255, 255, 255",
                   backgroundColor: "none",
                 }}
@@ -115,8 +124,8 @@ const Deliveroo = ({
                 href="https://pe-deliveroo.netlify.app/"
                 className="deploy"
                 whileHover={{
-                  scale: 1.2,
-                  transformOrigin: "left center",
+                  scale: 1.1,
+
                   textShadow: "0px 0px 8px rgb(255, 255, 255",
                   backgroundColor: "none",
                 }}

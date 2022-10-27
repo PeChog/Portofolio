@@ -63,6 +63,7 @@ const AnimatedRoutes = () => {
                 click={click}
                 mousePos={mousePos}
                 cursorRef={cursorRef}
+
                 // togglePlayPause={togglePlayPause}
                 // isPlaying={isPlaying}
                 // audioPlayer={audioPlayer}

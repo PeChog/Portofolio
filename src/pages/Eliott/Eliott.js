@@ -90,6 +90,15 @@ const Eliott = ({
           onMouseLeave={onMouseLeave}
         >
           <div className="right-content">
+            <div
+              style={{
+                fontFamily: "Millimetre-Regular",
+                fontSize: "45px",
+                textDecoration: "underline",
+              }}
+            >
+              Free-lance
+            </div>
             <h1>
               My first free-lance project i made for an artist called Eliott
               Paquet. I started his full-stack website just after my bootcamp,
@@ -104,8 +113,8 @@ const Eliott = ({
                 href="https://github.com/PeChog/EP_front/tree/main/src"
                 className="github"
                 whileHover={{
-                  scale: 1.2,
-                  transformOrigin: "left center",
+                  scale: 1.1,
+
                   textShadow: "0px 0px 8px rgb(255, 255, 255",
                   backgroundColor: "none",
                 }}
@@ -116,8 +125,8 @@ const Eliott = ({
                 href="http://eliottpaquet.com/"
                 className="deploy"
                 whileHover={{
-                  scale: 1.2,
-                  transformOrigin: "left center",
+                  scale: 1.1,
+
                   textShadow: "0px 0px 8px rgb(255, 255, 255",
                   backgroundColor: "none",
                 }}

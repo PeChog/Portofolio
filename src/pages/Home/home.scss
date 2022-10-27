@@ -2,7 +2,11 @@
   min-height: 100vh;
   background-color: #eee7e1;
   cursor: none;
+  .container {
+    width: 90vw;
 
+    margin: 0 auto;
+  }
   .app-cursor {
     z-index: 1000;
     border-radius: 50%;
@@ -19,8 +23,8 @@
     z-index: 1000;
     border-radius: 76% 24% 46% 54% / 87% 73% 27% 13%;
 
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border: 1px solid black;
     pointer-events: none;
     background-color: #eee7e1;
@@ -48,7 +52,7 @@
     display: inline-flex;
     flex-direction: column;
     margin-top: 6vh;
-    margin-left: 80px;
+
     max-width: 24vw;
     // border: red solid 1px;
     .home-link {
@@ -76,6 +80,7 @@
       font-size: 20px;
       margin: 10px;
       font-family: "Karric-Italic";
+      margin-left: 0vw;
     }
     h1 {
       //   font-family: "Millimetre-Light";
@@ -110,8 +115,7 @@
   .social {
     display: flex;
     // border: green solid 1px;
-    margin-top: 52vh;
-    padding-right: 57px;
+    margin-top: 60vh;
 
     width: 60px;
 
@@ -165,25 +169,26 @@
     .menu {
       display: inline-flex;
       flex-direction: column;
-      gap: 5vw;
+      gap: 0vw;
 
-      margin-top: 10vh;
-      margin-left: 5vw;
+      margin-top: 5vh;
 
       // border: red solid 1px;
       .home-link {
         color: black;
-        font-family: "outward-borders";
+        font-family: "outward-block";
         font-size: 100px;
         cursor: none;
       }
     }
     .presentation {
       // border: solid yellow 2px;
-      width: 92vw;
+      width: 90vw;
+      display: flex;
+      flex-direction: column;
+      margin-left: 0vw;
 
-      margin-top: 50vh;
-      margin-left: -24vw;
+      margin-top: 10vh;
 
       h1 {
         // border: solid red 1px;
@@ -207,16 +212,15 @@
       }
     }
     .social {
-      display: flex;
+      display: none;
       // border: green solid 1px;
-      margin-top: 2vh;
-      margin-right: 66.5vw;
-
-      margin-left: -30vh;
-
-      // width: 60px;
+      margin-top: 10vh;
+      align-self: flex-start;
 
       flex-direction: row;
+      max-height: 2vh;
+      width: 10vw;
+      margin-right: 80vw;
 
       img {
         margin-bottom: 5.5vh;
@@ -258,19 +262,17 @@
     .menu {
       display: inline-flex;
       flex-direction: column;
-      gap: 5vw;
-      width: 100%;
+      gap: 3vw;
 
-      margin-top: 10vh;
-      margin-left: 5vw;
+      margin-top: 6vh;
+      margin-left: 0vw;
 
       // border: red solid 1px;
     }
     .presentation {
       // border: solid yellow 2px;
-
-      margin-top: 70vh;
-      margin-left: -24vw;
+      margin-top: 6vh;
+      margin-left: 0vw;
 
       h1 {
         // border: solid red 1px;
@@ -303,12 +305,14 @@
       }
     }
     .social {
-      display: flex;
+      display: none;
       // border: green solid 1px;
-      margin-top: 2vh;
-      margin-right: 62.5vw;
+      margin-top: 6vh;
 
-      margin-left: -30vh;
+      width: 100%;
+      max-height: 2vh;
+
+      // margin-left: -30vh;
 
       // width: 60px;
 

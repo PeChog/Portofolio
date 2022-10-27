@@ -57,6 +57,12 @@
       width: 100%;
       display: flex;
       justify-content: center;
+      padding-top: 12%;
+      .right-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
       h1 {
         font-family: "Millimetre-Light";
         font-size: 25px;
