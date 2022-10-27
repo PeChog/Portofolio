@@ -171,7 +171,7 @@
       flex-direction: column;
       gap: 0vw;
 
-      margin-top: 5vh;
+      margin-top: 6vh;
 
       // border: red solid 1px;
       .home-link {
@@ -188,12 +188,17 @@
       flex-direction: column;
       margin-left: 0vw;
 
-      margin-top: 10vh;
+      margin-top: 2vh;
 
       h1 {
         // border: solid red 1px;
         //   font-family: "Millimetre-Light";
         font-size: 30px;
+      }
+
+      h2 {
+        margin-top: 3vh;
+        margin-left: -1vw;
       }
       h2:after {
         overflow: hidden;
