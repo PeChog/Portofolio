@@ -44,12 +44,12 @@ const Home = ({
             >
               <p
                 style={{
-                  marginTop: "22.5px",
-                  marginLeft: "20px",
+                  marginTop: "26px",
+                  marginLeft: "16px",
                   fontFamily: "Millimetre-Light",
                 }}
               >
-                Click here !
+                Click !
               </p>
             </div>
           ) : (
