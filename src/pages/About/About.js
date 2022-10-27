@@ -38,8 +38,8 @@ const About = ({ mousePos, cursorRef }) => {
             About
           </motion.h1>
           <h2>
-            I'm Pierre-Etienne. I'm a junior front-end developer passionate
-            about design and UI.
+            Hello ! I'm Pierre-Etienne. I'm a passionate junior front-end
+            developer.
           </h2>
           <p>
             I like to conceptualize artistic websites where I can fully use my
