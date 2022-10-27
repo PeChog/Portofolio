@@ -87,7 +87,16 @@ const About = ({ mousePos, cursorRef }) => {
           </div>
         </div>
         <div className="right-section">
-          <motion.img alt="PP" src={ProfilPicture} />
+          <motion.img
+            alt="PP"
+            src={ProfilPicture}
+            initial={{ opacity: -3 }}
+            animate={{
+              opacity: 1,
+              transition: { duration: 1.9 },
+            }}
+            exit={{ opacity: 0 }}
+          />
         </div>
       </div>
     </motion.div>
