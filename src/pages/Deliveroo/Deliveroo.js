@@ -91,12 +91,12 @@ const Deliveroo = ({
           onMouseLeave={onMouseLeave}
         >
           <div className="right-content">
-            <div className="school">School project</div>
+            <div className="school">School project.</div>
             <h1>
-              School project to train React, it's a Deliveroo restaurant page.
-              It was a good exercise because i did importants things for
-              front-end development: handle datas with an API, algo, hooks to
-              return a usable product.
+              This Deliveroo restaurant page is a school project to improove my
+              skills with React. I did two importants things for front-end
+              development: handle datas with an API and algo for the cart
+              component.
             </h1>
             <div className="list">
               <motion.a

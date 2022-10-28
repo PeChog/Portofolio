@@ -95,7 +95,7 @@ const Home = ({
               onClick={onClick}
             >
               Pierre-Etienne Chognard
-              <p>I love make creative design for websites</p>
+              <p>Creative designs for websites</p>
             </h1>
 
             {click ? (

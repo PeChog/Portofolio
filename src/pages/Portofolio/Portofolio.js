@@ -95,12 +95,11 @@ const Portofolio = ({
           onMouseLeave={onMouseLeave}
         >
           <div className="right-content">
-            <div className="personal">Personal project</div>
+            <div className="personal">Personal project.</div>
             <h1>
-              Starting a new personal project is really stimulating. You can
-              take time to explore new libraries, like here with Framer-Motion.
-              I did simple motions but it was a good exercise to understand
-              animations, page transitions, x/y axis.
+              Exploring new libraries is part of my process when building new
+              projects. Here, I did simple motions with Framer-Motion. It was a
+              good exercise to understand animations, page transitions .
             </h1>
             <div className="list">
               <motion.a

@@ -90,15 +90,16 @@ const Eliott = ({
           onMouseLeave={onMouseLeave}
         >
           <div className="right-content">
-            <div className="free">Free-lance</div>
+            <div className="free">Free-lance.</div>
             <h1>
-              My first free-lance project i made for an artist called Eliott
-              Paquet. I started his full-stack website just after my bootcamp,
-              it was very challenging. For the first time i had to make a
-              backoffice. I did a strong back-end for this one. Front-end was
-              managing API, carousel, hooks, i learned a lot of css properties
-              and global jsx rules too. Responsive on mobile and full-screen as
-              contract specifications.
+              The first free-lance project I made, was for an artist called
+              Eliott Paquet. I started his full-stack website just after my
+              bootcamp, it was very challenging. For the first time, I had to
+              make a backoffice. I did a strong back-end for this one. Regarding
+              front-end, I managed API, carousel, and hooks. I have learned a
+              lot of CSS properties and global jsx rules as well. Part of the
+              contract's specifications was that the website should be
+              responsive on mobile and full-screen.
             </h1>
             <div className="list">
               <motion.a

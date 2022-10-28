@@ -52,8 +52,8 @@ const Work = ({ cursorRef, mousePos }) => {
           <div className="work-infos">
             <h2>Works.</h2>
             <p>
-              Selected works. School, personal and free-lance. It shows you some
-              of my skills with react. Feel free to ask if you have questions.
+              Selected personal, free-lance and school works. It shows you some
+              of my skills with react.
             </p>
           </div>
         </div>

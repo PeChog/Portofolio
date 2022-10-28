@@ -42,16 +42,15 @@ const About = ({ mousePos, cursorRef }) => {
             developer.
           </h2>
           <p>
-            I like to conceptualize artistic websites where I can fully use my
+            I like to conceptualize websites where I can fully use my
             creativity. My goal is to go further with each of my projects and
             discover new technologies to use in my codes.
           </p>
           <p>
             After 10 years in the music business, in event and project
-            management, I started to wonder about my future. I needed to evolve,
-            to do something else. Having always been passionate about the world
-            of web and apps and constantly monitoring this subject, it is quite
-            natural that I decided to start a reconversion in web development.
+            management, I started to wonder about my future. Having always been
+            passionate about the world of web and apps and constantly monitoring
+            this subject, I decided to start a web development training.
           </p>
           <h2 style={{ marginTop: "50px" }}>Why development?</h2>
           <p>

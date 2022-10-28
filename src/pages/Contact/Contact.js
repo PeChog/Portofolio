@@ -57,6 +57,10 @@ const Contact = ({
               </a> */}
             </div>
           </div>
+          <div className="tel">
+            Tel:
+            <span style={{ marginLeft: "0.6vw" }}>06 76 68 98 31</span>
+          </div>
         </div>
       </motion.div>
     </>
